@@ -1,0 +1,17 @@
+version: 1
+services:
+  - type: web
+    name: my-node-app # Tên dịch vụ của bạn
+    env: node # Môi trường Node.js
+    buildCommand: npm install # Lệnh để xây dựng ứng dụng
+    startCommand: npm start # Lệnh để khởi động ứng dụng
+    autoDeploy: true # Tự động triển khai khi có thay đổi
+    plan: starter # Gói dịch vụ (starter, professional, v.v.)
+    region: oregon # Khu vực triển khai (oregon, frankfurt, v.v.)
+    envVars: # Biến môi trường
+      PORT: 3000
+      MONGODB_URL: mongodb+srv://nguyenvusang1108:234GmoHqQUWrlIo0@cluster0.7hcny.mongodb.net/coffeeshop
+      JWT_SECRET: mysupersecretkey12345!@$%^&*
+      CLOUDINARY_API_SECRET: KiHLs0CQqxAKjQSgWxFadR-nbNc
+      CLOUDINARY_API_KEY: 868824229487677
+      CLOUDINARY_CLOUD_NAME: sangclound
