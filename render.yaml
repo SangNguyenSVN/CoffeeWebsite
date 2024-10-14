@@ -9,8 +9,13 @@ services:
     plan: starter # Gói dịch vụ (starter, professional, v.v.)
     region: oregon # Khu vực triển khai (oregon, frankfurt, v.v.)
     envVars: # Biến môi trường
-      MONGODB_URL: mongodb+srv://nguyenvusang1108:234GmoHqQUWrlIo0@cluster0.7hcny.mongodb.net/coffeeshop
-      JWT_SECRET: mysupersecretkey12345!@$%^&*
-      CLOUDINARY_API_SECRET: KiHLs0CQqxAKjQSgWxFadR-nbNc
-      CLOUDINARY_API_KEY: 868824229487677
-      CLOUDINARY_CLOUD_NAME: sangclound
+      - key: MONGODB_URL
+        value: mongodb+srv://nguyenvusang1108:234GmoHqQUWrlIo0@cluster0.7hcny.mongodb.net/coffeeshop
+      - key: JWT_SECRET
+        value: mysupersecretkey12345!@$%^&*
+      - key: CLOUDINARY_API_SECRET
+        value: KiHLs0CQqxAKjQSgWxFadR-nbNc
+      - key: CLOUDINARY_API_KEY
+        value: 868824229487677
+      - key: CLOUDINARY_CLOUD_NAME
+        value: sangclound
