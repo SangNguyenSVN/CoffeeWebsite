@@ -9,6 +9,8 @@ services:
     plan: starter # Gói dịch vụ (starter, professional, v.v.)
     region: oregon # Khu vực triển khai (oregon, frankfurt, v.v.)
     envVars: # Biến môi trường
+      - key: PORT
+        value: 3000
       - key: MONGODB_URL
         value: mongodb+srv://nguyenvusang1108:234GmoHqQUWrlIo0@cluster0.7hcny.mongodb.net/coffeeshop
       - key: JWT_SECRET
